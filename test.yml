@@ -7,4 +7,4 @@
   tasks:
     - name: Print the HOME environment variable
       ansible.builtin.debug:
-        msg: "HOME={{ lookup('ansible.builtin.env', 'HOME') }}"
+        msg: "HOME={{ lookup('ansible.builtin.env', 'PET') }}"
