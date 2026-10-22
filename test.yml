@@ -1,0 +1,10 @@
+---
+- name: Print a local environment variable
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Print the HOME environment variable
+      ansible.builtin.debug:
+        msg: "HOME={{ lookup('ansible.builtin.env', 'HOME') }}"
