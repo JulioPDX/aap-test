@@ -5,6 +5,6 @@
   gather_facts: false
 
   tasks:
-    - name: Print the HOME environment variable
+    - name: Print the PET environment variable
       ansible.builtin.debug:
-        msg: "HOME={{ lookup('ansible.builtin.env', 'PET') }}"
+        msg: "PET={{ lookup('ansible.builtin.env', 'PET') }}"
